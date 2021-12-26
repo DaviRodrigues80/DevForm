@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8" />
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+
+	<title>Título da Página (Estrutura básica de uma página com HTML 5)</title>
+
+
+
+</head>
+
+
+
+<body id="ccorpo">
+	<div id="teste">
+		<label id="labOrigem" class="labTexto">Origem: </label>
+		<input type="text" name="tOrigem" id="cOrigem" size="20" maxlength="30" data-min-length="3"
+			placeholder="Digite a Origem da Viagem" />
+		<label id="labDestino" class="labTexto">Destino: </label>
+		<input type="text" name="tDestino" id="cDestino" size="20" maxlength="30" placeholder="" />
+		<p><label id="labKmInicial">Km Inicial: </label>
+			<input type="text" name="tKmInicial" id="cKmInicial" size="20" maxlength="30" placeholder="" />
+			<label id="labKmFinal">Km Final: </label>
+			<input type="text" name="tKmFinal" id="cKmFinal" size="20" maxlength="30" placeholder="" />
+			<input id="btnCalcularKm" type="button" value="Calcular Km" onclick="calc_total()">
+			<p>
+				<label id="labDescricao">Descrição: </label>
+				<input type="text" name="tDescricao" id="cDescricao" size="20" maxlength="30" placeholder="" />
+			</p>
+			<input type="button" id="btnLancar" value="Lançar" onclick="pegarDados()">
+			<button  id="btnbut" > BUT </button>
+
+	</div>
+
+	<div id="tabela">
+		<p id="pOrigem"></p>
+		<p id="pLabel"></p>
+	</div>
+
+
+	<script src="tabela.js"></script>
+
+	<footer>
+		<p>Copyright 2015 Código Fonte©</p>
+	</footer>
+</body>
+
+</html>
